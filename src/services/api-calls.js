@@ -1,8 +1,8 @@
-const baseUrl = 'https://swapi.dev/api/'
+const baseUrl = 'https://swapi.dev'
 
 
 export function getStarshipList() {
-  return fetch(`${baseUrl}/api/starships/`)
+  return fetch(`${baseUrl}/api/starships`)
   .then(res => res.json())
 }
 
