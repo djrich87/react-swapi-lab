@@ -12,17 +12,19 @@ const StarshipList = (props) => {
 
   return ( 
     <div>
-      <h1>Star Wars Starship</h1>
       <div className='icon-container'>
+
       {starships.map((starshipCard, index) => (
-      <Link to='/starship' state={{starshipCard}} key={index}>
-        <div className='ship-card'>
-          {starshipCard.name}
-        </div>
+        <Link to='/starship-details' state={{starshipCard}} key={index}>
+      <div className='ship-card'>
+        {starshipCard.name}
+    </div>
     </Link>
     ))}
     </div>
-  </div>
+    :
+
+    </div>
   );
 }
 

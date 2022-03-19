@@ -1,19 +1,19 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom'
-import StarshipList from './pages/StarshipList/StarshipList';
-import StarshipDetails from './pages/StarshipDetails/StarshipDetails';
-
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import StarshipList from "./pages/StarshipList.js/StarshipList";
+import StarshipDetails from "./pages/StarshipDetails/StarshipsDetails";
 
 function App() {
   return (
-    <>
-    <StarshipList />
-    <Routes>
-      <Route path='/starship' element={<StarshipDetails />} />
-    </Routes>
-    </>
+    <div>
+      <NavBar />
+      <Routes>
+        <Route path="/starship" element={<StarshipList />} />
+        <Route path="/starship-details" element={<StarshipDetails />} />
+      </Routes>
+    </div>
   );
 }
-
 
 export default App;
