@@ -9,7 +9,7 @@ const StarshipList = (props) => {
     getStarshipList()
     .then(listData => setStarships(listData.results))
   }, [])
-
+  console.group(starships)
   return ( 
     <div>
       <div className='icon-container'>
@@ -22,8 +22,6 @@ const StarshipList = (props) => {
     </Link>
     ))}
     </div>
-    :
-
     </div>
   );
 }

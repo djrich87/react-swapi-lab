@@ -7,6 +7,6 @@ export function getStarshipList() {
 }
 
 export function getStarshipDetails(apiUrl) {
-  return fetch(`${baseUrl}${apiUrl}`)
+  return fetch(`${apiUrl}`)
   .then(res => res.json())
 }
