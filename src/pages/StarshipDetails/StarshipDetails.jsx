@@ -24,8 +24,7 @@ const StarshipDetails = () => {
           <h3>Model: {starshipDetails.model}</h3>
           <Link to='/starship' >Return</Link>
         </div>
-        : <h2>loading</h2>
-      }
+        : <h2>loading</h2>}
     </div>
   );
 }

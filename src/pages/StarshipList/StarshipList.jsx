@@ -10,6 +10,7 @@ const StarshipList = (props) => {
     .then(listData => setStarships(listData.results))
   }, [])
   console.group(starships)
+  
   return ( 
     <div>
       <div className='icon-container'>
